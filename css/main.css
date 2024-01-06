@@ -5,6 +5,8 @@
 @import "./blocks/header.css";
 @import "./blocks/featured.css";
 @import "./blocks/product.css";
+@import "./blocks/info-section.css";
+@import "./blocks/post.css";
 
 /*
 font-family: 'Noto Sans', sans-serif;
