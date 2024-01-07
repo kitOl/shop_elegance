@@ -32,14 +32,14 @@ img {
 /* New Products */
 
 .section-header {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .section-header__title {
   color: #000;
   text-align: center;
   font-family: "Playfair Display", serif;
-  font-size: 42px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -51,7 +51,7 @@ img {
   max-width: 630px;
   color: #999;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   /* text-transform: uppercase; */
 }
@@ -61,7 +61,7 @@ img {
 }
 
 .section-header__description--16px {
-  font-size: 16px;
+  font-size: 14px;
   margin: 10px auto 30px;
 }
 
@@ -72,17 +72,51 @@ img {
 }
 
 .section-new {
-  padding: 60px 0 70px;
+  padding: 30px 0 35px;
 }
 
 .section-featured {
-  padding: 70px 0;
+  padding: 35px 0;
 }
 
 .section-blog {
-  padding: 70px 0 45px;
+  padding: 35px 0 20px;
 }
 
 .section-subscribe {
-  padding: 45px 0 100px;
+  padding: 20px 0 50px;
+}
+
+@media (min-width: 992px) {
+  .section-new {
+    padding: 60px 0 70px;
+  }
+
+  .section-featured {
+    padding: 70px 0;
+  }
+
+  .section-blog {
+    padding: 70px 0 45px;
+  }
+
+  .section-subscribe {
+    padding: 45px 0 100px;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .section-header__title {
+    font-size: 42px;
+  }
+
+  .section-header__description {
+    font-size: 14px;
+  }
+
+  .section-header__description--16px {
+    font-size: 16px;
+  }
 }
