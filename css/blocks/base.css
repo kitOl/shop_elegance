@@ -13,13 +13,14 @@ p {
   padding: 0;
 }
 
-.none {
-  display: none;
-}
-
 body {
   margin: 0;
   font-family: "Noto Sans", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .container {

@@ -1,6 +1,12 @@
 .nav {
-  padding: 40px 0;
+  padding: 10px 0;
   /* height: 39px; */
+}
+
+@media (min-width: 992px) {
+  .nav {
+    padding: 40px 0;
+  }
 }
 
 .nav__row {
@@ -18,26 +24,104 @@ a.nav__logo {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-right: 83px;
+  margin-right: 15px;
+}
+
+@media (min-width: 992px) {
+  .nav__logo,
+  a.nav__logo {
+    margin-right: 83px;
+  }
 }
 
 a.nav__logo:hover {
   color: #f72464;
 }
 
+.nav__list-holder {
+  display: none;
+  /* opacity: 0; */
+  /* transition: opacity 0.2s ease-in; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #b6275291;
+  z-index: 9;
+}
+
+.nav__list-holder--visible {
+  display: block;
+  /* opacity: 1; */
+}
+
+@media (min-width: 992px) {
+  .nav__list-holder {
+    display: block;
+    opacity: 1;
+    position: static;
+    background-color: transparent;
+  }
+}
+
 .nav__list {
-  margin: 0;
-  padding: 0;
   list-style-type: none;
 
-  max-width: 368px;
-  width: 100%;
+  /* max-width: 368px;
+  width: 100%; */
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.nav__list {
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /* z-index: 9; */
+  width: 262px;
+  background-color: rgba(0, 0, 0);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  transform: translateX(-100%);
+  transition: transform 0.2s ease-in;
+}
+
+.nav__list-holder.nav__list-holder--visible .nav__list {
+  transform: translateX(0%);
+}
+
+@media (min-width: 992px) {
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    color: #000;
+    max-width: 368px;
+    width: auto;
+    background-color: transparent;
+    transform: none;
+    justify-content: center;
+  }
 }
 
 .nav__item {
-  margin-right: 30px;
+  /* margin-right: 30px; */
+  display: block;
+  padding: 15px;
+  border-bottom: 1px solid #313131;
+}
+
+@media (min-width: 992px) {
+  .nav__item {
+    margin-right: 30px;
+    padding: 0;
+    border-bottom: none;
+  }
 }
 
 .nav__item:last-child {
@@ -46,7 +130,7 @@ a.nav__logo:hover {
 
 .nav__link {
   text-decoration: none;
-  color: #000;
+  color: inherit;
   font-size: 18px;
   font-weight: 400;
 }
@@ -57,6 +141,13 @@ a.nav__logo:hover {
 
 .nav__cart {
   margin-left: auto;
+  margin-right: 35px;
+}
+
+@media (min-width: 992px) {
+  .nav__cart {
+    margin-right: 0;
+  }
 }
 
 .nav__cart-link {

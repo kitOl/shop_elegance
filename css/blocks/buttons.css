@@ -4,10 +4,11 @@
   display: inline-block;
   text-align: center;
   font-family: "Playfair Display", serif;
-  font-size: 26px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 400;
-  padding: 5px 33px 11px;
+  /* padding: 5px 33px 11px; */
+  padding: 0.4331em 1.2692em 0.5385em;
 
   border-radius: 4px;
   background-color: #f72464;
@@ -17,6 +18,12 @@
   text-decoration: none;
 
   transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in;
+}
+
+@media (min-width: 992px) {
+  .button {
+    font-size: 26px;
+  }
 }
 
 .button:hover {
