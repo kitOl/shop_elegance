@@ -21,8 +21,8 @@ nav,
 .section-new,
 .info-section,
 .section-featured,
-/* .section-blog, */
-.section-subscribe,
+.section-blog,
+/* .section-subscribe, */
 footer {
   display: none;
 }
