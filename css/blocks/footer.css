@@ -18,6 +18,11 @@
 }
 
 .footer__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -25,6 +30,14 @@
   text-transform: uppercase;
 
   margin-bottom: 25px;
+}
+
+@media (min-width: 450px) {
+  .footer__nav {
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
+  }
 }
 
 .footer__nav a {
@@ -35,7 +48,7 @@
   opacity: 0.8;
 }
 
-.footer a + a {
+.footer__socials a + a {
   margin-left: 30px;
 }
 

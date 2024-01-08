@@ -10,9 +10,14 @@
   .subscribe-form {
     display: flex;
     flex-direction: row;
-    margin-right: 10px;
+    justify-content: center;
+    column-gap: 10px;
     /* justify-content: center;
     align-items: center; */
+  }
+
+  .subscribe-form__input {
+    text-align-last: left;
   }
 }
 
@@ -26,6 +31,7 @@
   border: 1px solid #f72464;
   background: #fff;
 
+  text-align: center;
   color: #000;
   font-family: "Noto Sans", sans-serif;
   font-size: 16px;

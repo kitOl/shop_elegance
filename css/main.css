@@ -15,14 +15,15 @@
 font-family: 'Noto Sans', sans-serif;
 font-family: 'Playfair Display', serif;
 */
-
-nav,
+/*
+.nav,
 .header,
 .section-new,
 .info-section,
 .section-featured,
 .section-blog,
-/* .section-subscribe, */
+.section-subscribe,
 footer {
   display: none;
 }
+*/
