@@ -1,10 +1,14 @@
 .info-section {
   padding: 68px 0;
   position: relative;
-  background-image: url(/img/info-block/info-block-1.jpg);
+  background-image: url(./../../img/info-block/info-block-1.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
+}
+
+.info-section__next {
+  background-image: url(./../../img/info-block/info-block-2.jpg);
 }
 
 .info-section::before {
